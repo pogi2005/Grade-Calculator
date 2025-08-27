@@ -30,7 +30,7 @@
             
             <button name="calculate">Calculate Grade</button>
         </form>
-        
+        <?php //Dito po makikita yung mga nakalagay sa labas o samadaling salita eto yung mga makikita mo sa code mo, mga mababasa mo ganun  ?>
         <?php
         if (isset($_POST['calculate'])) {
             $quiz = $_POST['quiz'];
@@ -48,7 +48,8 @@
             elseif (!is_numeric($exam) || $exam < 0 || $exam > 100) {
                 $error = "Exam score must be a number between 0 and 100.";
             }
-            
+            //Dito naman po makikita kung ano lang po yung pwedeng i input sa code at kung hanggang saan lang yung hangganan neto
+
             if (empty($error)) {
                 $quiz_weight = 0.30;
                 $assignment_weight = 0.30;
@@ -67,7 +68,7 @@
                 } else {
                     $letter_grade = "F tigil mo na behh";
                 }
-                
+                //dito naman po makikita kung maka kuha kaba ng A or B at dito rin nakalagay kung anong grade lang yung pwede makakuha ng A ang etc
                 echo "<div class='Grade Total'>";
                 echo "<h2>Grade Total</h2>";
                 echo "<p>Weighted Average: " . number_format($weighted_average, 2) . "</p>";
@@ -75,6 +76,7 @@
                 echo "</div>";
             } else {
                 echo "<p class='error'>$error</p>";
+                //dito naman po yung mababasa mo kung ano grade at kung saan yung ano total na nakuha mo sa lahat ng exam,ass,quiz dito niyo makikita yun at yung letter na nakuha mo 
             }
         }
         ?>
