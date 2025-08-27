@@ -1,0 +1,16 @@
+.container{
+    height: 300px;
+    width: 500px;
+    margin:0;
+    padding:30px;
+    border:1px solid;
+    background:#C0ECEE;
+    }
+body{
+    text-align: center;
+    margin: 20px;
+    }
+    form-group{
+        font: 200px;
+    }
+  

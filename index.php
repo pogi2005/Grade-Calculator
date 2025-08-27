@@ -1,19 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Grade Calculator</title>
-<style>
-    .container{
-        width: 500px;
-        margin:0;
-        padding:30px;
-        border:1px solid;
-        background:#C0ECEE;
-    }
-    body{
-        text-align: center;
-    }
-    </style>
+<title>Grade Calculator</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
@@ -39,7 +28,7 @@
                        value="<?php echo isset($_POST['exam']) ? $_POST['exam'] : ''; ?>">
             </div>
             
-            <button type="submit" name="calculate">Calculate Grade</button>
+            <button name="calculate">Calculate Grade</button>
         </form>
         
         <?php
